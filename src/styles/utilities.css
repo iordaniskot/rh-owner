@@ -1,0 +1,70 @@
+/* Custom utility classes for your color system */
+
+@layer utilities {
+  /* Text color utilities */
+  .text-primary {
+    color: var(--color-text);
+  }
+  
+  .text-secondary {
+    color: var(--color-text-secondary);
+  }
+  
+  /* Background utilities */
+  .bg-brand-light {
+    background-color: #cfbea3;
+  }
+  
+  .bg-brand-dark {
+    background-color: #334b69;
+  }
+  
+  /* Text color utilities */
+  .text-brand-light {
+    color: #cfbea3;
+  }
+  
+  .text-brand-dark {
+    color: #334b69;
+  }
+  
+  /* Border utilities */
+  .border-brand-light {
+    border-color: #cfbea3;
+  }
+  
+  .border-brand-dark {
+    border-color: #334b69;
+  }
+  
+  /* Gradient utilities */
+  .bg-brand-gradient {
+    background: linear-gradient(135deg, #cfbea3 0%, #334b69 100%);
+  }
+  
+  .bg-brand-gradient-reverse {
+    background: linear-gradient(135deg, #334b69 0%, #cfbea3 100%);
+  }
+  
+  /* Card style using your colors */
+  .card-brand {
+    @apply bg-surface border border-primary/20 rounded-lg shadow-lg p-6;
+  }
+  
+  .card-brand-secondary {
+    @apply bg-surface-secondary border border-primary/10 rounded-lg shadow p-4;
+  }
+  
+  /* Button variants */
+  .btn-brand-primary {
+    @apply bg-primary text-surface px-4 py-2 rounded-lg font-medium hover:opacity-90 transition-all duration-200;
+  }
+  
+  .btn-brand-secondary {
+    @apply bg-secondary text-primary px-4 py-2 rounded-lg font-medium hover:opacity-90 transition-all duration-200;
+  }
+  
+  .btn-brand-outline {
+    @apply border-2 border-primary text-primary bg-transparent px-4 py-2 rounded-lg font-medium hover:bg-primary hover:text-surface transition-all duration-200;
+  }
+}

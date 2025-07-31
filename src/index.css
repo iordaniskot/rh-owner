@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import custom utilities */
+@import './styles/utilities.css';
+
+:root {
+  /* Light mode colors */
+  --color-primary: #334b69;        /* Your main color */
+  --color-secondary: #cfbea3;      /* Your background color */
+  --color-surface: #ffffff;        /* Light surface */
+  --color-surface-secondary: #f5f5f5; /* Light secondary surface */
+  --color-text: #000000;           /* Black text for light mode */
+  --color-text-secondary: #6b7280; /* Secondary text */
+  
+  /* shadcn/ui color variables using your brand colors */
+  --background: 0 0% 100%;          /* White background */
+  --foreground: 210 40% 20%;        /* Dark text (your main color) */
+  --primary: 210 40% 30%;           /* Your main color #334b69 */
+  --primary-foreground: 0 0% 100%;  /* White text on primary */
+  --secondary: 35 20% 75%;          /* Your secondary color #cfbea3 */
+  --secondary-foreground: 210 40% 20%; /* Dark text on secondary */
+  --muted: 0 0% 96%;                /* Light gray */
+  --muted-foreground: 0 0% 45%;     /* Medium gray text */
+  --accent: 35 20% 75%;             /* Your secondary color */
+  --accent-foreground: 210 40% 20%; /* Dark text on accent */
+  --border: 0 0% 90%;               /* Light border */
+  --input: 0 0% 90%;                /* Input border */
+  --ring: 210 40% 30%;              /* Focus ring (your main color) */
+  --card: 0 0% 100%;                /* Card background */
+  --card-foreground: 210 40% 20%;   /* Card text */
+  --popover: 0 0% 100%;             /* Popover background */
+  --popover-foreground: 210 40% 20%; /* Popover text */
+  --destructive: 0 84% 60%;         /* Red for errors */
+  --destructive-foreground: 0 0% 98%; /* White text on red */
+  --radius: 0.5rem;                 /* Border radius */
+  
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark mode colors */
+.dark {
+  --color-primary: #cfbea3;        /* Same primary color as light mode */
+  --color-secondary: #334b69;      /* Same secondary color as light mode */
+  --color-surface: #1a1a1a;        /* Dark surface */
+  --color-surface-secondary: #2d2d2d; /* Dark secondary surface */
+  --color-text: #ffffff;           /* White text for dark mode */
+  --color-text-secondary: #9ca3af; /* Secondary text for dark mode */
+  
+  /* shadcn/ui dark mode colors */
+  --background: 0 0% 10%;           /* Dark background */
+  --foreground: 0 0% 98%;           /* White text */
+  --primary: 210 40% 30%;           /* Your main color #334b69 */
+  --primary-foreground: 0 0% 100%;  /* White text on primary */
+  --secondary: 35 20% 75%;          /* Your secondary color #cfbea3 */
+  --secondary-foreground: 210 40% 20%; /* Dark text on secondary */
+  --muted: 0 0% 18%;                /* Dark gray */
+  --muted-foreground: 0 0% 65%;     /* Light gray text */
+  --accent: 35 20% 75%;             /* Your secondary color */
+  --accent-foreground: 210 40% 20%; /* Dark text on accent */
+  --border: 0 0% 18%;               /* Dark border */
+  --input: 0 0% 18%;                /* Input border */
+  --ring: 210 40% 30%;              /* Focus ring (your main color) */
+  --card: 0 0% 10%;                 /* Card background */
+  --card-foreground: 0 0% 98%;      /* Card text */
+  --popover: 0 0% 10%;              /* Popover background */
+  --popover-foreground: 0 0% 98%;   /* Popover text */
+  --destructive: 0 84% 60%;         /* Red for errors */
+  --destructive-foreground: 0 0% 98%; /* White text on red */
+}
+
+/* Base styles using CSS variables */
+body {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Ensure all text elements inherit the proper color */
+* {
+  color: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family, system-ui, Avenir, Helvetica, Arial, sans-serif);
+  line-height: var(--line-height, 1.5);
+  font-weight: var(--font-weight, 400);
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, div {
+  color: var(--color-text);
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: inherit;
+  transition: color 0.25s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
