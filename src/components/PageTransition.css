@@ -1,0 +1,46 @@
+/* Page transition animations */
+.page-transition {
+  animation: fadeInSlide 0.4s ease-in-out;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Alternative slide from right animation */
+.page-transition-slide {
+  animation: slideFromRight 0.5s ease-out;
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover and focus transitions */
+button, a, input {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Dark mode transition */
+.dark {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
