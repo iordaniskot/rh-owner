@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     
-      <main style={{ padding: '20px' }}>
+      <main >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
