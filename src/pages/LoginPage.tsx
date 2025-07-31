@@ -1,6 +1,6 @@
 import { LoginForm } from "../components/LoginForm";
 
-import DarkModeToggle from "../components/DarkModeToggle";
+import DarkModeToggle from "../components/DarkModeToggle/DarkModeToggle";
 export default function LoginPage() {
   return (
     <div className="grid min-h-svh lg:grid-cols-2">
