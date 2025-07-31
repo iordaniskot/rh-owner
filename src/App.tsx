@@ -6,6 +6,8 @@ import ColorShowcase from './components/ColorShowcase'
 // import DarkModeToggle from './components/DarkModeToggle'
 import PageTransition from './components/PageTransition'
 // import Navigation from './components/Navigation'
+import { StagewiseToolbar } from '@stagewise/toolbar-react'
+import ReactPlugin from '@stagewise-plugins/react'
 
 import './App.css'
 import LoginPage from './pages/LoginPage'
@@ -25,6 +27,11 @@ function App() {
           </Routes>
         </PageTransition>
       </main>
+      <StagewiseToolbar 
+        config={{
+          plugins: [ReactPlugin]
+        }}
+      />
     </>
   )
 }
