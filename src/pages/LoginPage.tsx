@@ -8,7 +8,7 @@ export default function LoginPage() {
 
       <div className="flex flex-col gap-4 p-6 md:p-10">
         <div className="flex justify-center gap-2 md:justify-start">
-          <a href="#" className="flex items-center gap-2 font-medium p-3 rounded-lg bg-[var(--color-secondary)] dark:bg-[var(--color-primary)] transition-colors duration-300 w-fit hover:shadow-xl transition-shadow border border-[var(--color-primary)] dark:border-[var(--color-secondary)] border-opacity-40 dark:border-opacity-50 [box-shadow:inset_0_2px_4px_rgba(0,0,0,0.1),_0_8px_16px_rgba(0,0,0,0.15)] dark:[box-shadow:inset_0_2px_4px_rgba(0,0,0,0.2),_0_8px_16px_rgba(0,0,0,0.15),_0_8px_12px_rgba(255,255,255,0.1)]">
+          <a href="#" className="flex items-center gap-2 font-medium p-3 rounded-lg bg-[#f5f5f5] transition-colors duration-300 w-fit hover:shadow-xl transition-shadow border border-[var(--color-primary)] dark:border-[var(--color-primary)] border-opacity-40 dark:border-opacity-50 [box-shadow:inset_0_2px_4px_rgba(0,0,0,0.1),_0_8px_16px_rgba(0,0,0,0.15)] dark:shadow-lg dark:shadow-white/20 dark:[box-shadow:inset_0_2px_4px_rgba(0,0,0,0.2),_0_8px_16px_rgba(0,0,0,0.15),_0_8px_12px_rgba(255,255,255,0.1)]">
             <img
               src="https://www.rhodesholidaysvillas.com/images/rh1.svg"
               alt="Rhodes Holidays Villas"
